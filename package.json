@@ -13,6 +13,10 @@
     "build-storybook": "storybook build",
     "prepare": "husky install"
   },
+  "volta": {
+    "node": "18.17.0",
+    "pnpm": "8.6.11"
+  },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
   },
