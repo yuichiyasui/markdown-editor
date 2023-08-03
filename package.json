@@ -10,7 +10,11 @@
     "format": "prettier . --write",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "prepare": "husky install"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -31,9 +35,12 @@
     "@typescript-eslint/parser": "^6.0.0",
     "@vitejs/plugin-react-swc": "^3.3.2",
     "eslint": "^8.45.0",
+    "eslint-config-prettier": "^8.10.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
     "eslint-plugin-storybook": "^0.6.13",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.3",
     "prettier": "3.0.1",
     "storybook": "^7.2.1",
     "typescript": "^5.0.2",
