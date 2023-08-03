@@ -16,6 +16,12 @@ module.exports = {
     "prettier",
   ],
   settings: {
+    react: {
+      version: "detect",
+    },
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"],
+    },
     "import/resolver": {
       typescript: true,
       node: true,
@@ -29,6 +35,16 @@ module.exports = {
       "warn",
       {
         allowConstantExport: true,
+      },
+    ],
+    "react/react-in-jsx-scope": "off",
+    "import/order": [
+      "error",
+      {
+        alphabetize: {
+          order: "asc",
+        },
+        "newlines-between": "always",
       },
     ],
   },
